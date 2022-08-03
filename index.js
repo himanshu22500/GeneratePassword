@@ -7,7 +7,6 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
                 ];
 
 let passwordOneEl = document.getElementById("password-one")
-let passwordTwoEl = document.getElementById("password-two")
 
 
 function generatePassword(){
@@ -19,15 +18,6 @@ function generatePassword(){
     }
 
     passwordOneEl.textContent = firstPassword
-    
-    let secondPassword = ""
-
-    for(let i=0; i<15; i++){
-        let randomIdx = generateRandomIdx()
-        secondPassword += characters[randomIdx]
-    }
-
-    passwordTwoEl.textContent = secondPassword
 }
 
 
